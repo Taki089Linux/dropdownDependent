@@ -4,9 +4,10 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
-import { HelloComponent } from './hello.component';
 import { RouterModule } from '@angular/router';
 import { appRoutes } from './app.routes';
+import { DropDownComponent } from './drop-down/drop-down.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 @NgModule({
   imports: [
     BrowserModule,
@@ -14,7 +15,7 @@ import { appRoutes } from './app.routes';
     HttpClientModule,
     RouterModule.forRoot(appRoutes),
   ],
-  declarations: [AppComponent, HelloComponent],
+  declarations: [AppComponent, DropDownComponent, PageNotFoundComponent],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
