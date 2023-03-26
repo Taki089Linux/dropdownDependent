@@ -8,6 +8,7 @@ import { RouterModule } from '@angular/router';
 import { appRoutes } from './app.routes';
 import { DropDownComponent } from './drop-down/drop-down.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { DropdownService } from './dropdown.service';
 @NgModule({
   imports: [
     BrowserModule,
@@ -17,5 +18,6 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
   ],
   declarations: [AppComponent, DropDownComponent, PageNotFoundComponent],
   bootstrap: [AppComponent],
+  providers: [DropdownService],
 })
 export class AppModule {}
